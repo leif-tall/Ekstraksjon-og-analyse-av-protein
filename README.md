@@ -5,5 +5,5 @@ Denne mappen brukes til en labbrapport basert på analyser gjort i molekylærlab
 
 
 # Gruppemedlemmer 
-Marius Bjerkeset, Christian G. Jensen, Leif C. Tallaksen, Karoline Simpson-Larsen & Johan Olav Smørdal Botn
+Marius Bjerkeset, Christian G. Jensen, Leif C. Tallaksen, Karoline Simpson-Larsen, Johan Olav Smørdal Botn & Oliver Bottolfs
 
