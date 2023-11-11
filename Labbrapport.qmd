@@ -8,6 +8,26 @@ editor_options:
 
 ## Introduksjon
 
+**Introduksjon**
+
+Proteiner gjør det meste av arbeidet i cellene i kroppen, og er nødvendig for strukturen, funksjonene og reguleringen av kroppens vev og organer. De er essensielle deler av organismen, og deltar praktisk talt i alle prosesser i kroppen (\@telsler2002). Det å kunne analysere proteiner vil derfor være av stor betydning, og svært interessant å se på innen ulike fagområder, som celle- og molekylærbiologi.
+
+Det å studere protein og proteinkonsentrasjonen i muskelceller har blitt brukt i flere treningsstudier (\@stec2016; @hammarstrom2020). Den biologiske tilpasningen til motstandstrening varierer mellom personer, på bakgrunn av variabler som treningsvolum, intensitet, repetisjoner og frekvens av treningsøktene (\@ratamass2009). I tillegg til at genetiske og epigenetiske disposisjoner og miljøfaktorer spiller en rolle for variasjoner i tilpasninger (\@timmons2011). Ved å studere protein kan man se på blant annet interaksjon, lokasjon og aktiveringsstatus av ulike proteiner. Dette kan for eksempel brukes for å fremme gunstige treningstilpasninger. 
+
+I denne labrapporten har vi gjort en protein ekstraksjon og analyse. Èn frivillig person meldte seg til å ta en mikrobiopsi fra vastus lateralis, i venstre og høyre bein. Personen gjennomførte eksentrisk beinpress til utmattelse på venstre bein før prøvetaking. Vi var interessert i å se på det fosforylerte p-70 proteinet til denne personen, og forskjellen i konsentrasjonen mellom venstre og høyre bein. Prøvene ble tatt på Høgskolen i Innlandet, 30.oktober 2023. Resterende prøver som er analysert er hentet fra mikrobiopsi fra én trent- og én utrent person. I denne analysen var vi interessert i å se på UBF-proteinet, og sammenlikne konsentrasjonen av dette proteinet mellom personene. 
+
+**Teori**
+
+Det er individuelle forskjeller på adaptasjoner til styrketrening, målt i muskelstyrke og muskelmasse, og dette korrelerer med muskelcelle-karakteristikker i hvile og under trening (\@terzis2008; @raue2012; @thalacker2013; @stec2016). Hemmelse av proteinet mTORC1 svekker proteinsyntesen hos mennesker (\@drummond2009), mens aktivering av proteinet S6-Kinase 1 (S6K1/p-70), som ligger nedstrøms for mTORC1, gir en økning i proteinsyntesen og påfølgende økning i muskelvekst (Terzis et al. 2008; Burd et al. 2010). Et økt treningsvolum vil føre til større fosforylering av S6K1, og dermed markante tilpasninger gjennom gjentatte episoder med økt proteinsyntese (Burd et al. 2010; @terzis2010; @ahtiainen2015). Dette er grunnen til at vi ønsker å se på konsentrasjonen av p-70 i det beinet som har trent til utmattelse, mot det beinet som ikke har trent rett før prøvetaking. 
+
+Det er korrelasjon mellom mengden UBF-protein i cellene, og hastigheten på ribosomal DNA-transkripsjon i hvilende og serum-stimulerte celler (\@gilbetic1995). Mitotisk cellevekst krever kontinuerlig ribosombiogenese, som er nødvendig for å støtte proteinsyntesen. Desto raskere cellene går gjennom cellesyklusen, desto raskere må ribosombiogenesen skje. Denne prosessen begrenses av hastigheten på transkripsjonen av rRNA-genene (rDNA). Det betyr at dersom konsentrasjonen av UBF i cellene er stor, vil transkripsjonen av rDNA gå raskere. Dette er med på å styre produksjonen av ribosomer, og de er essensielle for proteinsyntesen og cellevekst (\@gilbetic1995). Dette er grunnen til at vi ønsker å se på konsentrasjonen av UBF-proteinet i beinet til én trent person versus en utrent.
+
+For å analysere de aktuelle proteinene ble det brukt en metode kalt Western blot. Western blot er en immunologisk metode som brukes i celle- og molekylærbiologi. Teknikken brukes for å separere og identifisere spesifikke proteiner fra en kompleks blanding av proteiner ekstrahert fra celler. I Western blot blir en blanding av proteiner separert basert på molekylvekt og dermed type, gjennom gel-elektroforese. Resultatene overføres deretter til en membran, som produserer et bånd for hvert protein. Membranen inkuberes deretter med merkede antistoffer spesifikke for det ønskede proteinet (\@yang2012) . 
+
+De ubundne antistoffene vaskes bort, slik at det kun er de bundne antistoffene til proteinet som man er interessert i blir igjen. De bundne antistoffene detekteres ved fremkalling av film. Siden antistoffene bare binder seg ved de proteinene av interesse, skal kun ett bånd være synlig. Tykkelsen på båndet samsvarer med mengden protein som er til stede. Western blot er en nyttig teknikk proteindeteksjon der man får muligheten til å kvantifisere proteinuttrykk (\@yang2012).
+
+\
+
 ## Metode
 
 #### Prøvemateriale
