@@ -5,5 +5,5 @@ Denne mappen brukes til en labbrapport basert på analyser gjort i molekylærlab
 Innsamlet data: her finnes alle bildene fra Western Blot
 
 # Gruppemedlemmer 
-Marius Bjerkeset, Christian G. Jensen, Leif C. Tallaksen, Karoline Simpson-Larsen, Johan Olav Smørdal Botn & Oliver Bottolfs
+Marius Bjerkeset, Christian G. Jenssen, Leif C. Tallaksen, Karoline Simpson-Larsen, Johan Olav Smørdal Botn & Oliver Bottolfs
 
