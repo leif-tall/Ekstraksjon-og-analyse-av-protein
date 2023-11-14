@@ -6,7 +6,7 @@ crossref:
   fig-prefix: "Figur"
   tbl-title: "**Tabell**"
 editor_options: 
-  chunk_output_type: console 
+  chunk_output_type: console
 bibliography: referanser/referanser.bib
 ---
 
@@ -75,5 +75,49 @@ Den relativt høye, men akseptable, CV-en fra homogeniseringen kan indikere en b
 ### **Western blot**
 
 På tross av adekvate resultater for p-70, resulterte muskelbiopsien i ugyldige resultater for UBF. Dette kan skyldes problemer med antistoffet (2017 årgang) (spesifisitet, selektivitet eller reproduserbarhet), bufferløsningen eller antigenet [@porstmann1985]. Imidlertid fikk gruppe 4, som hadde et annet antistoff (2022 årgang), heller ikke gyldige resultater for UBF. Dette kan indikere at antistoffet potensielt ikke var hovedårsaken til de ugyldige resultatene. Det bør likevel nevnes at kan settes spørsmålstegn ved konsistensen til antistoffet til gruppe 4, dermed kan vi ikke fullstendig utelukke at antistoffet kan ha bidratt til de ugyldige resultatene for UBF. En annen forklaring på de ugyldige resultatene kan være at mengden antigen på membranen potensielt ikke har vært tilstrekkelig, da dette også kan gi svakt eller ingen proteinsignal [@sule2023]. Proteiner som er uttrykt ved lave nivåer er mer sannsynlig å kreve en lengre overføringstid eller en større mengde prøve [@mishra2019]. Imidlertid modifiserte vi ikke verken overføringstiden eller mengden prøve. Dette kan dermed forklare deler av grunnen til at muskelbiopsien resulterte i ugyldige resultater for UBF. Fremtidige eksperimenter bør derfor vurdere å modifisere overføringstiden og prøvemengden ved mistanke om utilstrekkelig antigen på membranen.
+
+
+```{r}
+# Opprett en data.table
+library(data.table)
+
+dt <- data.table(
+  Kontroll_A = c(1.574, 1.635, 1.640),
+  Kontroll_B = c(1.537, 1.558, 1.566),
+  Kontroll_C = c(1.369, 1.471, 1.395),
+  Kontroll_D = c(1.246, 1.243, 1.280),
+  Kontroll_E = c(1.048, 1.070, 1.067),
+  Kontroll_F = c(0.835, 0.809, 0.855),
+  Kontroll_G = c(0.682, 0.677, 0.691),
+  Kontroll_H = c(0.520, 0.521, 0.519),
+  Prøve_1 = c(1.266, 1.083, 1.227))
+
+
+
+print(dt)
+
+library(tidyverse)
+library(gt)
+dt %>% 
+  summarise(A = sd(Kontroll_A)/mean(Kontroll_A)*100, 
+            B = sd(Kontroll_B)/mean(Kontroll_B)*100,
+            C = sd(Kontroll_C)/mean(Kontroll_C)*100, 
+            E = sd(Kontroll_D)/mean(Kontroll_D)*100,
+            D = sd(Kontroll_E)/mean(Kontroll_E)*100, 
+            F = sd(Kontroll_F)/mean(Kontroll_F)*100,
+            G = sd(Kontroll_G)/mean(Kontroll_G)*100, 
+            H = sd(Kontroll_H)/mean(Kontroll_H)*100,
+            P1 = sd(Prøve_1)/mean(Prøve_1)*100
+            ) %>% 
+  pivot_longer(cols = A:P1,
+               names_to = "navn", 
+               values_to = "cv (%)") %>% 
+
+  gt() %>% 
+  fmt_number(columns = `cv (%)`, decimals = 2)
+
+
+
+```
 
 ## **Referanser:**
