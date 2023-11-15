@@ -57,9 +57,9 @@ Neste dag vasket vi for primærantistoff før vi tilsatte sekundær antistoff. V
 
 Tørr muskelprøve veies, brukte 1.88 mg tørrvekt. Tilsatte protease/phosphatase inhibitorer til en iskald lysis buffer (Hepes buffer), 500 µl Hepes buffer og 5 µl inhibitorer. Viktig at prøven var på is til vi tilsatte Hepes buffer. Tilsatte 150 µl av blandingen til muskelprøven knuste mekanisk for hånd. Mos til det ikke er noen synlige biter igjen, første gang gikk det 20-30 sek før den ble satt på is igjen. Plasser på SB2 rotator i kjøleskap og roterte prøve i 30 min. Spinn den i 10 min på 10 000 g, 4 ℃, før vi forflyttet supernatanten forsiktig til et nytt rør uten å forstyrre pelleten. Brukte ufortynnede prøver, men resultatene var over maksimal konsentrasjon. Derfor fortynnet vi med dH2O og bestemte total proteinkonsentrasjon på en 1:1 fortynning. Konsentrasjonen bestemte vi med Bradford Assay, brukte 10 µl prøve + 250 µl reagent i hver brønn (Pierce Detergent Compatible Bradford Assay Reagent, Thermo Fisher Scientific).
 
-## **Resultater** 
+## **Resultater**
 
-```{r} 
+```{r}
 #| echo: false 
 #| output: false 
 #| warning: false 
@@ -86,7 +86,7 @@ print(dt)
 
 ```
 
-```{r} 
+```{r}
 #| echo: false 
 #| output: false 
 #| warning: false 
@@ -114,25 +114,23 @@ results_mean_cv_control <- round(results_mean_cv_control, 1)
 
 ```
 
-Mengden fosforylert p-70 var større i venstre bein enn i høyre bein, se @fig-figur1. Når det gjaldt homogeniseringen var det en god korrelasjon mellom signal og konsentrasjon i kontrollene og prøvene (se @fig-figur2). Gjennomsnittlig variasjonskoeffisient på signalstyrken for kontrollene var `r results_mean_cv_control`, fremstilt i @tbl-tabell1. Det ble funnet en 350 % større signalstyrke for p-70 i venstre bein versus høyre bein. Høyre bein hadde en signalstyrke på 2758 og 4842 (gjennomsnitt = 3800), mens venstre bein hadde en signalstyrke på 14826 og 11793 (gjennomsnitt = 13309). Homogeniseringen av de andre prøvene viste at 99,9 % av variasjonen i signal kunne forklares av konsentrasjon, og at signalstyrken for proteinmengden var på 2,532, 2,166 og 2,454, henholdsvis. I tillegg viste homogeniseringen akseptabel reliabilitet (variasjonskoeffisient \[CV\] = 20 %). 
+Mengden fosforylert p-70 var større i venstre bein enn i høyre bein, se @fig-figur1. Når det gjaldt homogeniseringen var det en god korrelasjon mellom signal og konsentrasjon i kontrollene og prøvene (se @fig-figur2). Gjennomsnittlig variasjonskoeffisient på signalstyrken for kontrollene var `r results_mean_cv_control`, fremstilt i @tbl-tabell1. Det ble funnet en 350 % større signalstyrke for p-70 i venstre bein versus høyre bein. Høyre bein hadde en signalstyrke på 2758 og 4842 (gjennomsnitt = 3800), mens venstre bein hadde en signalstyrke på 14826 og 11793 (gjennomsnitt = 13309). Homogeniseringen av de andre prøvene viste at 99,9 % av variasjonen i signal kunne forklares av konsentrasjon, og at signalstyrken for proteinmengden var på 2,532, 2,166 og 2,454, henholdsvis. I tillegg viste homogeniseringen akseptabel reliabilitet (variasjonskoeffisient \[CV\] = 20 %).
 
-```{r, results='asis'} 
+```{r, results='asis'}
 #| echo: false
 cat("\\newpage")
 ```
 
 ![*Illustrasjon av mengden fosforylert p-70 i venstre versus høyre bein. De to boksene til venstre viser mengde p-70 i høyre fot og de to boksene til høyre viser mengde p-70 i venstre fot (N = 1).*](innsamlet-data/bilder/figur1_analysert_bilde_p70.png){#fig-figur1}
 
-```{r, results='asis'} 
+```{r, results='asis'}
 #| echo: false
 cat("\\newpage")
 ```
 
 ![*Spredningsplott med trendkurve, som illustrerer den forklarte variansen mellom signal og konsentrasjon (N = 1). Notat: Data er presentert som bestemmelseskoeffisient (R*<sup>2</sup>) (skala: 0,0--1,0).](innsamlet-data/bilder/figur2_spredningsplot_trendkurve.png){#fig-figur2}
 
-
-
-```{r} 
+```{r}
 #| label: tbl-tabell1 
 #| tbl-cap: "*Tabellen viser resultatene fra homogeniseringen for bestemmelse av proteinkonsentrasjon. CV er utregnet variasjonskoefisient for alle kontrollene og prøven. Alle verdiene er beregnet basert på triplikat. Pipetterte 3 av hver kontroll (A-H) og av prøveresultatene (P1).*"
 #| echo: false 
@@ -169,9 +167,8 @@ Den relativt høye, men akseptable, CV-en fra homogeniseringen kan indikere en b
 
 ### **Western blot**
 
-På tross av adekvate resultater for p-70, resulterte muskelbiopsien i ugyldige resultater for UBF. Dette kan skyldes problemer med antistoffet (2017 årgang) (spesifisitet, selektivitet eller reproduserbarhet), bufferløsningen eller antigenet [@porstmann1985]. Imidlertid fikk gruppe 4, som hadde et annet antistoff (2022 årgang), heller ikke gyldige resultater for UBF. Dette kan indikere at antistoffet potensielt ikke var hovedårsaken til de ugyldige resultatene. Det bør likevel nevnes at kan settes spørsmålstegn ved konsistensen til antistoffet til gruppe 4, dermed kan vi ikke fullstendig utelukke at antistoffet kan ha bidratt til de ugyldige resultatene for UBF. En annen forklaring på de ugyldige resultatene kan være at mengden antigen på membranen potensielt ikke har vært tilstrekkelig, da dette også kan gi svakt eller ingen proteinsignal [@sule2023]. Proteiner som er uttrykt ved lave nivåer er mer sannsynlig å kreve en lengre overføringstid eller en større mengde prøve [@mishra2019]. Imidlertid modifiserte vi ikke verken overføringstiden eller mengden prøve. Dette kan dermed forklare deler av grunnen til at muskelbiopsien resulterte i ugyldige resultater for UBF. Fremtidige eksperimenter bør derfor vurdere å modifisere overføringstiden og prøvemengden ved mistanke om utilstrekkelig antigen på membranen.
+Western Blotting stiller høye krav til presisjon fra forskerne [@ghosh2014]. Dette gjør at marginale feil, som feil mengde primærantistoff, kan føre til ugyldige resultater [@ghosh2014]. Videre har inter-forsker variabilitet vist seg å være den største feilkilden, og kan utgjøre opptil 80 % av den totale variasjonen [@koller2005]. På tross av alle disse potensielle feilkildene, oppnådde vi adekvate resultater for p-70. Dette kan skyldes grundig planlegging og nøye utførelse av western blotting-prosedyren. Selv om teknikken stiller høye krav til presisjon fra forskerne, ble potensielle feilkilder adressert gjennom en nøyaktig tilnærming til hver fase av eksperimentet.
 
+Muskelbiopsien resulterte derimot i ugyldige resultater for UBF. Dette kan skyldes problemer med antistoffet (2017 årgang) (spesifisitet, selektivitet eller reproduserbarhet), bufferløsningen eller antigenet [@porstmann1985]. Imidlertid fikk gruppe 4, som hadde et annet antistoff (2022 årgang), heller ikke gyldige resultater for UBF. Dette kan indikere at antistoffet potensielt ikke var hovedårsaken til de ugyldige resultatene. Det bør likevel nevnes at kan settes spørsmålstegn ved konsistensen til antistoffet til gruppe 4, dermed kan vi ikke fullstendig utelukke at antistoffet kan ha bidratt til de ugyldige resultatene for UBF.
 
-
-
-
+En annen forklaring på de ugyldige resultatene kan være at mengden antigen på membranen potensielt ikke har vært tilstrekkelig, da dette også kan gi svakt eller ingen proteinsignal [@sule2023]. Proteiner som er uttrykt ved lave nivåer er mer sannsynlig å kreve en lengre overføringstid eller en større mengde prøve [@mishra2019]. Imidlertid modifiserte vi ikke verken overføringstiden eller mengden prøve. Dette kan dermed forklare deler av grunnen til at muskelbiopsien resulterte i ugyldige resultater for UBF. Fremtidige eksperimenter bør derfor vurdere å modifisere overføringstiden og prøvemengden ved mistanke om utilstrekkelig antigen på membranen.
