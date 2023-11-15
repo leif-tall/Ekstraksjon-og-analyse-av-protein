@@ -128,7 +128,12 @@ cat("\\newpage")
 cat("\\newpage")
 ```
 
-![*Spredningsplott med trendkurve, som illustrerer den forklarte variansen mellom signal og konsentrasjon (N = 1). Notat: Data er presentert som bestemmelseskoeffisient (R*<sup>2</sup>) (skala: 0,0--1,0).](innsamlet-data/bilder/figur2_spredningsplot_trendkurve.png){#fig-figur2}
+![*Spredningsplott med trendkurve, som illustrerer den forklarte variansen mellom signal og konsentrasjon (N = 1). Notat: Data er presentert som bestemmelseskoeffisient (R*<sup>2</sup>) (skala: 0,0--1,0).](innsamlet-data/bilder/figur2_spredningsplot_trendkurve.png){#fig-figur2} 
+
+```{r, results='asis'}
+#| echo: false
+cat("\\newpage")
+```
 
 ```{r}
 #| label: tbl-tabell1 
